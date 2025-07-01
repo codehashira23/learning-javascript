@@ -18,4 +18,29 @@ const Ar= [..."12345678"];
 // const Ar2  = [...123456789 ];// TypeError: 123456789 is not iterable
 console.log(Ar);
 
+ // now spread operator in object 
+ const obj1 = {
+    key1:"value1",
+    key2:"value2",
+    key1:"value32", // baad wali overwrite kar jayegi 
+ }
+ console.log(obj1);
  
+ const obj2 = {
+    key1:"valueUnique",
+    key3:"value3",
+    key4:"value4"
+}
+ console.log(obj2);
+
+
+const newobject ={...obj1,...obj2};
+const newobject2 ={...obj2,...obj1, key89:"value89"};
+console.log(newobject);  
+console.log(newobject2);  
+
+// more ways 
+const newobj = {..."abc" }; 
+console.log(newobj); 
+const newwe = {...["item1", "item2"]}
+console.log(newwe); 
