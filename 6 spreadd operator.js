@@ -44,3 +44,8 @@ const newobj = {..."abc" };
 console.log(newobj); 
 const newwe = {...["item1", "item2"]}
 console.log(newwe); 
+
+// use in problem solving 
+const positoning = {..."sfjkahfiowhiohoifakfhsadlkfhaihfi"};
+console.log(positoning);
+
